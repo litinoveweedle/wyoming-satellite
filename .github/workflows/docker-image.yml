@@ -34,5 +34,5 @@ jobs:
           platforms: linux/arm/7,linux/arm64
           push: true
           tags: |
-            litinoveweedle/wyoming-satellite:latest
-            ghcr.io/litinoveweedle/wyoming-satellite:latest
+            user/app:latest
+            ghcr.io/user/app:latest
