@@ -10,6 +10,8 @@ _VENV_DIR = _PROGRAM_DIR / ".venv"
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--dev", action="store_true", help="Install dev requirements")
+parser.add_argument("--vad", action="store_true", help="Install voice activity detection requirements")
+parser.add_argument("--aen", action="store_true", help="Install audio enhacement requirements")
 args = parser.parse_args()
 
 # Create virtual environment
@@ -36,8 +38,21 @@ subprocess.check_call(
     ]
 )
 
+if args.vad:
+    # Install dev requirements
+    subprocess.check_call(
+        pip + ["install", "-r", str(_PROGRAM_DIR / "requirements_vad.txt")]
+    )
+
+if args.aen:
+    # Install dev requirements
+    subprocess.check_call(
+        pip + ["install", "-r", str(_PROGRAM_DIR / "requirements_audio_enhancement.txt")]
+    )
+
 if args.dev:
     # Install dev requirements
     subprocess.check_call(
         pip + ["install", "-r", str(_PROGRAM_DIR / "requirements_dev.txt")]
     )
+

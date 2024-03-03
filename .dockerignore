@@ -1,5 +1,5 @@
 *
-!requirements.txt
+!requirements*.txt
 !MANIFEST.in
 !setup.py
 !script/setup

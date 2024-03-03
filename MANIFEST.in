@@ -1,2 +1,4 @@
 include requirements.txt
+include requirements_vad.txt
+include requirements_audio_enhancement.txt
 include VERSION
