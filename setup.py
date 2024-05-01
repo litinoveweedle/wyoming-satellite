@@ -31,6 +31,7 @@ install_requires = get_requirements(this_dir / "requirements.txt")
 extras_require = {
     "silerovad": get_requirements(this_dir / "requirements_vad.txt"),
     "webrtc": get_requirements(this_dir / "requirements_audio_enhancement.txt"),
+    "pixelring": get_requirements(this_dir / "requirements_pixel_ring.txt"),
 }
 
 
