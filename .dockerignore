@@ -4,8 +4,10 @@
 !setup.py
 !script/setup
 !script/run
+!script/ring
 !wyoming_satellite/*.py
 !wyoming_satellite/utils
 !wyoming_satellite/VERSION
+!pixel_ring/*.py
 !docker/run
 !sounds/*.wav

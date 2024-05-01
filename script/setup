@@ -12,6 +12,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--dev", action="store_true", help="Install dev requirements")
 parser.add_argument("--vad", action="store_true", help="Install voice activity detection requirements")
 parser.add_argument("--aen", action="store_true", help="Install audio enhacement requirements")
+parser.add_argument("--led", action="store_true", help="Install Respeaker pixel ring control")
 args = parser.parse_args()
 
 # Create virtual environment
@@ -48,6 +49,12 @@ if args.aen:
     # Install dev requirements
     subprocess.check_call(
         pip + ["install", "-r", str(_PROGRAM_DIR / "requirements_audio_enhancement.txt")]
+    )
+
+if args.led:
+    # Installpixel ring 
+    subprocess.check_call(
+        pip + ["install", "-r", str(_PROGRAM_DIR / "requirements_pixel_ring.txt")]
     )
 
 if args.dev:
