@@ -1,3 +1,2 @@
 spidev
 pyusb
-pixel-ring
