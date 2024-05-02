@@ -7,7 +7,7 @@
 !wyoming_satellite/*.py
 !wyoming_satellite/utils
 !wyoming_satellite/VERSION
-!pixel_ring/*.py
+!pixel_ring/ring
 !pixel_ring/pixel_ring
 !docker/run
 !sounds/*.wav

@@ -18,7 +18,7 @@ COPY pixel_ring/ ./pixel_ring/
 RUN script/setup --aen --vad --led
 
 RUN apt-get purge --yes build-essential linux-headers-generic && \
-    apt-get autoremove --purge --yes || true
+    apt-get autoremove --purge --yes
 
 COPY script/run ./script/
 COPY docker/run ./
