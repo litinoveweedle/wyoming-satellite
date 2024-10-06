@@ -35,6 +35,8 @@ services:
       - "tcp://openwakeword:10400"
       - "--wake-word-name"
       - "hey_jarvis"
+      - "--event-uri"
+      - "tcp://satellite:10500"
       - "--mic-command"
       - "/usr/bin/arecord -r 16000 -c 1 -f S16_LE -t raw -D mic"
       - "--snd-command"
