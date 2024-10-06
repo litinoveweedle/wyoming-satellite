@@ -10,7 +10,7 @@ COPY script/setup ./script/
 COPY setup.py requirements*.txt MANIFEST.in ./
 COPY wyoming_satellite/ ./wyoming_satellite/
 COPY examples/*_service.py ./examples/
-COPY script/run_* ./script/
+COPY script/run* ./script/
 COPY docker/run ./
 
 RUN apt-get update && \

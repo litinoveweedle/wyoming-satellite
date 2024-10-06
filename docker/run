@@ -4,7 +4,7 @@
 
 sleep 3
 
-/app/sript/run_usbmic  \
+/app/script/run_usbmic  \
     --uri tcp://127.0.0.1:10500 &
 
 # Wait for any process to exit
