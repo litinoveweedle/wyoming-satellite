@@ -1,8 +1,0 @@
-#!/bin/bash
-
-cd /app/pixel_ring
-
-source ../.venv/bin/activate
-
-python ring.py $1
-
