@@ -2,8 +2,9 @@
 !requirements*.txt
 !MANIFEST.in
 !setup.py
+!examples/*.py
 !script/setup
-!script/run
+!script/run_*
 !wyoming_satellite/*.py
 !wyoming_satellite/utils
 !wyoming_satellite/VERSION

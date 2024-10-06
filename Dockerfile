@@ -9,8 +9,8 @@ COPY sounds/ ./sounds/
 COPY script/setup ./script/
 COPY setup.py requirements*.txt MANIFEST.in ./
 COPY wyoming_satellite/ ./wyoming_satellite/
-COPY pixel_ring/ ./pixel_ring/
-COPY script/run ./script/
+COPY examples/*_service.py ./examples/
+COPY script/run_* ./script/
 COPY docker/run ./
 
 RUN apt-get update && \

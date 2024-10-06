@@ -1,3 +1,14 @@
 #!/usr/bin/env bash
 /app/script/run \
-    --uri tcp://0.0.0.0:10700 "$@"
+    --uri tcp://0.0.0.0:10700 "$@" &
+
+sleep 3
+
+/app/sript/run_usbmic  \
+    --uri tcp://127.0.0.1:10500 &
+
+# Wait for any process to exit
+wait -n
+
+# Exit with status of process that exited first
+exit $?
