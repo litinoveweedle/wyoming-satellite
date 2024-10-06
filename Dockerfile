@@ -7,10 +7,11 @@ WORKDIR /app
 
 COPY sounds/ ./sounds/
 COPY script/setup ./script/
-COPY setup.py requirements*.txt MANIFEST.in ./
-COPY wyoming_satellite/ ./wyoming_satellite/
-COPY examples/*_service.py ./examples/
 COPY script/run* ./script/
+COPY examples/*_service.py ./examples/
+COPY wyoming_satellite/ ./wyoming_satellite/
+COPY setup.py requirements*.txt MANIFEST.in ./
+
 COPY docker/run ./
 
 RUN apt-get update && \
